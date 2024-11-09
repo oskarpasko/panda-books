@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { StartwarsComponent } from './startwars.component';
+import { StarwarsComponent } from './starwars.component';
 
-describe('StartwarsComponent', () => {
-  let component: StartwarsComponent;
-  let fixture: ComponentFixture<StartwarsComponent>;
+describe('StarwarsComponent', () => {
+  let component: StarwarsComponent;
+  let fixture: ComponentFixture<StarwarsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [StartwarsComponent]
+      declarations: [StarwarsComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(StartwarsComponent);
+    fixture = TestBed.createComponent(StarwarsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
