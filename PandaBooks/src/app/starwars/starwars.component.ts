@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { STARWARS_BOOKS } from '../data/starwars-data';
 
 @Component({
   selector: 'app-starwars',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './starwars.component.scss'
 })
 export class StarwarsComponent {
+
+  books = STARWARS_BOOKS;
+
+  constructor(){};
 
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LACKBERG_BOOKS } from '../data/lackberg-data';
 
 @Component({
   selector: 'app-lackberg',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './lackberg.component.scss'
 })
 export class LackbergComponent {
+
+  books = LACKBERG_BOOKS;
+
+  constructor(){};
 
 }
