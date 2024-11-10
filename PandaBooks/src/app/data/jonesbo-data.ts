@@ -1,3 +1,17 @@
 export const JONESBO_BOOKS = [
-    {id: 1, title: ""},
+    {id: 1, title: 'Królestwo'},
+    {id: 2, title: 'Krwawy Księżyc'},
+    {id: 3, title: 'Karaluchy'},
+    {id: 4, title: 'Nóż'},
+    {id: 5, title: 'Pragnienie'},
+    {id: 6, title: 'Upiory'},
+    {id: 7, title: 'Macbeth'},
+    {id: 8, title: 'Pentagram'},
+    {id: 9, title: 'Zemsta'},
+    {id: 10, title: 'Zazdrość'},
+    {id: 11, title: 'Łowcy Głów'},
+    {id: 12, title: 'Pierwszy Śnieg'},
+    {id: 13, title: 'Satruta Krew'},
+    {id: 14, title: 'Syn'},
+    {id: 15, title: 'Człowiek Nietoperz'},
 ];
