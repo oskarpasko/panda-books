@@ -9,7 +9,17 @@ import { STARWARS_BOOKS } from '../data/starwars-data';
 export class StarwarsComponent {
 
   books = STARWARS_BOOKS;
+  searchTitle = '';
+  selectedType = '';
 
   constructor(){};
 
+  filteredBooks() {
+    return this.books.filter(book => {
+      const matchesTitle = book.title.toLowerCase().includes(this.searchTitle.toLowerCase());
+      const matchesType = this.selectedType ? book.type === this.selectedType : true;
+
+      return matchesTitle && matchesType;
+    });
+  }
 }

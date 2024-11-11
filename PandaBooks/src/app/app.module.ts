@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { StarwarsComponent } from './starwars/starwars.component';
 import { JonesboComponent } from './jonesbo/jonesbo.component';
 import { LackbergComponent } from './lackberg/lackberg.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LackbergComponent } from './lackberg/lackberg.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()

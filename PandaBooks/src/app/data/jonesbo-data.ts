@@ -11,7 +11,7 @@ export const JONESBO_BOOKS = [
     {id: 10, title: 'Zazdrość'},
     {id: 11, title: 'Łowcy Głów'},
     {id: 12, title: 'Pierwszy Śnieg'},
-    {id: 13, title: 'Satruta Krew'},
+    {id: 13, title: 'Zatruta Krew'},
     {id: 14, title: 'Syn'},
     {id: 15, title: 'Człowiek Nietoperz'},
 ];
