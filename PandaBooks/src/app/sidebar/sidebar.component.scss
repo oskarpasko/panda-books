@@ -7,6 +7,19 @@
   }
   
   nav {
+    .image-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      
+      .image-style {
+        background-color: #fff;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+      }
+    }
     ul {
       list-style-type: none;
       padding: 0;
