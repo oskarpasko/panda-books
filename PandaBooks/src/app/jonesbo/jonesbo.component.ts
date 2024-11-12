@@ -9,6 +9,15 @@ import { JONESBO_BOOKS } from '../data/jonesbo-data';
 export class JonesboComponent {
 
   books = JONESBO_BOOKS;
+  searchTitle = '';
 
   constructor(){};
+
+  filteredBooks() {
+    return this.books.filter(book => {
+      const matchesTitle = book.title.toLowerCase().includes(this.searchTitle.toLowerCase());
+
+      return matchesTitle;
+    });
+  }
 }

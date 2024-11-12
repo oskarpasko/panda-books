@@ -1,7 +1,7 @@
 .table-container {
   display: flex;
   justify-content: center;
-  flex-direction: column;  // Dodano, aby przycisk i tabela były w jednej kolumnie
+  flex-direction: column;
   align-items: center;
   padding: 20px;
 }
@@ -17,39 +17,36 @@
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-  thead {
-    background-color: #56058D;
-    color: #fff;
-
-    th {
-      padding: 12px;
-      text-align: center;
-      font-weight: 600;
-    }
-  }
-
-  tbody {
-    tr {
-      border-bottom: 1px solid #e0e0e0;
-      transition: background-color 0.3s;
-
-      &:nth-child(even) {
-        background-color: #f9f9f9;
-      }
-
-      &:hover {
-        background-color: #f1f1f1;
-      }
-
-      td {
-        padding: 12px;
-      }
-    }
-  }
 }
 
-// Stylizacja przycisku "Powrót na stronę główną"
+.styled-table thead {
+  background-color: #56058D;
+  color: #fff;
+}
+
+.styled-table th {
+  padding: 12px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.3s;
+}
+
+.styled-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.styled-table td {
+  padding: 12px;
+}
+
 .back-to-home {
   background-color: #007bff;
   color: white;
@@ -58,14 +55,50 @@
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  margin-bottom: 20px;  // Odstęp między przyciskiem a tabelą
+  margin-bottom: 20px;
   transition: background-color 0.3s ease;
+}
 
-  &:hover {
-    background-color: #0056b3;
-  }
+.back-to-home:hover {
+  background-color: #0056b3;
+}
 
-  &:focus {
-    outline: none;  // Usuwa obramowanie po kliknięciu
-  }
+.back-to-home:focus {
+  outline: none;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.filters label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.filters input,
+.filters select {
+  width: 30%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.filters input:focus,
+.filters select:focus {
+  outline: none;
+  border-color: #56058D;
+}
+
+.filters input::placeholder {
+  color: #bbb;
 }

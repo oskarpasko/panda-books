@@ -1,21 +1,35 @@
 <div class="table-container">
   <button class="back-to-home" routerLink="/">Home</button>
 
-    <table class="styled-table">
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Tytuł</th>
-          <th>Typ</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let book of books">
-          <td>{{ book.id }}</td>
-          <td>{{ book.title }}</td>
-          <td>{{ book.type }}</td>
-        </tr>
-      </tbody>
-    </table>
+  <!-- Filters -->
+  <div class="filters">
+    <label for="searchTitle">Szukaj po tytule:</label>
+    <input id="searchTitle" type="text" [(ngModel)]="searchTitle" placeholder="Wpisz tytuł...">
+
+    <label for="typeFilter">Filtruj po typie:</label>
+    <select id="typeFilter" [(ngModel)]="selectedType">
+      <option value="">Wszystkie</option>
+      <option value="Książka">Książka</option>
+      <option value="Manga">Manga</option>
+      <option value="Komiks">Komiks</option>
+    </select>
   </div>
-  
+
+  <!-- Table with books -->
+  <table class="styled-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Tytuł</th>
+        <th>Typ</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of filteredBooks()">
+        <td>{{ book.id }}</td>
+        <td>{{ book.title }}</td>
+        <td>{{ book.type }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
